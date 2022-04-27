@@ -1,4 +1,4 @@
-import { User } from './dist';
+import { WebsocketUser } from './users';
 
 export enum ESupportedClientMessageTypes {
     Statistic = 'statistic',
@@ -37,6 +37,6 @@ export type StatisticType = [
 
 export interface IWebSocketMessage<MessageType = string, DataType = StatisticType> {
     type: MessageType,
-    user: User,
+    user: WebsocketUser,
     data: DataType;
 }

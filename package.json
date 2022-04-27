@@ -1,5 +1,10 @@
 {
   "name": "weei-types",
-  "version": "0.0.0",
-  "private": false
+  "version": "1.0.0",
+  "description": "Weei types!",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ]
 }

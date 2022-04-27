@@ -1,5 +1,5 @@
 {
-  "name": "@weei/common",
+  "name": "weei-common",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

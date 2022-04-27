@@ -1,12 +1,7 @@
-export enum ESupportedContentTypes {
-    Video = 'video',
-    Image = 'img',
-    Text = 'text',
-    Audio = 'audio',
-}
+export type TSupportedContentTypes = 'video' | 'img' | 'text' | 'audio';
 
 export interface IContent {
-    type: ESupportedContentTypes.Video | ESupportedContentTypes.Image | ESupportedContentTypes.Text | ESupportedContentTypes.Audio;
+    type: TSupportedContentTypes;
     src: string;
 }
 
@@ -53,11 +48,13 @@ export enum ENumStatistics {
     config = 'c'
 }
 
+export type TSupportedStatisticTypes = 'events' | 'method' | 'routing' | 'params' | 'error' | 'config';
+
 export type PrependedTuple<I, T extends unknown[]> = [I, ...T];
 export type AppendTuple<I, T extends unknown[]> = [...T, I];
 
 export type StatisticType = [
-    ENumStatistics.events | ENumStatistics.method | ENumStatistics.params | ENumStatistics.routing | ENumStatistics.error | ENumStatistics.config,
+    TSupportedStatisticTypes,
     string | number,
     ...any
 ];

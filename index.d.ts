@@ -21,33 +21,6 @@ export interface IPost extends IPostBasic {
     owner: IOwner;
 }
 
-export enum ESupportedClientMessageTypes {
-    Statistic = 'statistic',
-    RequestSharing = 'requestSharing',
-    StopObserving = 'stopObserving',
-    StopSharing = 'stopSharing',
-    Message = 'message',
-    Connected = 'connected'
-}
-
-export enum ESupportedServerMessageTypes {
-    Statistic = 'statistic',
-    Command = 'command',
-    Leave = 'leave',
-    ConnectedList = 'connectedList',
-    Connected = 'connected',
-    Message = 'message'
-}
-
-export enum ENumStatistics {
-    events = 'e',
-    method = 'm',
-    routing = 'r',
-    params = 'p',
-    error = 'er',
-    config = 'c'
-}
-
 export type TSupportedStatisticTypes = 'events' | 'method' | 'routing' | 'params' | 'error' | 'config';
 
 export type PrependedTuple<I, T extends unknown[]> = [I, ...T];

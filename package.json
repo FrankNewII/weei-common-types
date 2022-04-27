@@ -1,19 +1,16 @@
 {
-  "name": "weei-common-types",
-  "version": "1.3.8",
+  "name": "@weei/common",
+  "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "module": "./index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "prepublish": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FrankNewII/weei-common-types.git"
   },
-  "author": "franknew",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FrankNewII/weei-common-types/issues"

@@ -1,0 +1,20 @@
+{
+  "name": "weei-common-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "prepublish": "tsc",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankNewII/weei-common-types.git"
+  },
+  "author": "franknew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankNewII/weei-common-types/issues"
+  },
+  "homepage": "https://github.com/FrankNewII/weei-common-types#readme"
+}

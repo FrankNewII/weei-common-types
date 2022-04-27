@@ -1,5 +1,5 @@
 {
-  "name": "weei-types",
+  "name": "weei-used-types",
   "version": "1.0.0",
   "description": "Weei types!",
   "main": "dist/index.js",

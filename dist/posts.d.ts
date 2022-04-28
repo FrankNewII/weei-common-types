@@ -13,11 +13,14 @@ export interface IPostBasic {
     costs: number;
     title: string;
     description?: string;
+    isVisible: boolean;
     hashtags: string[];
+    availableFor?: IOwner[];
+    hiddenFrom: string[];
     content: IContent;
 }
 export interface IPost extends IPostBasic {
-    created: number;
+    createdAt: number;
     id: number;
     likes: number;
     sizes: string[];

@@ -10,13 +10,13 @@ export interface IContent {
     src: string;
 }
 export interface IPostBasic {
+    isForSale: boolean;
     costs: number;
     title: string;
     description?: string;
     isVisible: boolean;
     hashtags: string[];
     availableFor?: IOwner[];
-    hiddenFrom: string[];
     content: IContent;
 }
 export interface IPost extends IPostBasic {

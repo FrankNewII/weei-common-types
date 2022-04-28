@@ -1,9 +1,9 @@
-export interface IOwner {
+export interface IBasicProfile {
     alias: string;
     wallet: string;
 }
 
-export interface IProfile extends IOwner {
+export interface IProfile extends IBasicProfile {
     avatar: string;
     followers: number;
     likes: number;

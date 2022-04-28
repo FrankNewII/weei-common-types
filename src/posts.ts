@@ -1,4 +1,4 @@
-import { IOwner } from './users';
+import { IBasicProfile } from './users';
 
 export enum ESupportedContentTypes {
     Video = 'video',
@@ -25,5 +25,5 @@ export interface IPost extends IPostBasic {
     id: number;
     likes: number;
     sizes: string[];
-    owner: IOwner;
+    owner: IBasicProfile;
 }

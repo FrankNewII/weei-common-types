@@ -9,6 +9,8 @@ var ESupportedClientMessageTypes;
     ESupportedClientMessageTypes["StopSharing"] = "stopSharing";
     ESupportedClientMessageTypes["Message"] = "message";
     ESupportedClientMessageTypes["Connected"] = "connected";
+    ESupportedClientMessageTypes["Offer"] = "offer";
+    ESupportedClientMessageTypes["Answer"] = "answer";
 })(ESupportedClientMessageTypes = exports.ESupportedClientMessageTypes || (exports.ESupportedClientMessageTypes = {}));
 var ESupportedServerMessageTypes;
 (function (ESupportedServerMessageTypes) {
@@ -18,6 +20,8 @@ var ESupportedServerMessageTypes;
     ESupportedServerMessageTypes["ConnectedList"] = "connectedList";
     ESupportedServerMessageTypes["Connected"] = "connected";
     ESupportedServerMessageTypes["Message"] = "message";
+    ESupportedServerMessageTypes["Offer"] = "offer";
+    ESupportedServerMessageTypes["Answer"] = "answer";
 })(ESupportedServerMessageTypes = exports.ESupportedServerMessageTypes || (exports.ESupportedServerMessageTypes = {}));
 var ENumStatistics;
 (function (ENumStatistics) {

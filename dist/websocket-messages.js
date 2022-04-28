@@ -11,6 +11,7 @@ var ESupportedClientMessageTypes;
     ESupportedClientMessageTypes["Connected"] = "connected";
     ESupportedClientMessageTypes["Offer"] = "offer";
     ESupportedClientMessageTypes["Answer"] = "answer";
+    ESupportedClientMessageTypes["Candidate"] = "candidate";
 })(ESupportedClientMessageTypes = exports.ESupportedClientMessageTypes || (exports.ESupportedClientMessageTypes = {}));
 var ESupportedServerMessageTypes;
 (function (ESupportedServerMessageTypes) {
@@ -22,6 +23,7 @@ var ESupportedServerMessageTypes;
     ESupportedServerMessageTypes["Message"] = "message";
     ESupportedServerMessageTypes["Offer"] = "offer";
     ESupportedServerMessageTypes["Answer"] = "answer";
+    ESupportedServerMessageTypes["Candidate"] = "candidate";
 })(ESupportedServerMessageTypes = exports.ESupportedServerMessageTypes || (exports.ESupportedServerMessageTypes = {}));
 var ENumStatistics;
 (function (ENumStatistics) {

@@ -7,7 +7,8 @@ export declare enum ESupportedClientMessageTypes {
     Message = "message",
     Connected = "connected",
     Offer = "offer",
-    Answer = "answer"
+    Answer = "answer",
+    Candidate = "candidate"
 }
 export declare enum ESupportedServerMessageTypes {
     Statistic = "statistic",
@@ -17,7 +18,8 @@ export declare enum ESupportedServerMessageTypes {
     Connected = "connected",
     Message = "message",
     Offer = "offer",
-    Answer = "answer"
+    Answer = "answer",
+    Candidate = "candidate"
 }
 export declare enum ENumStatistics {
     events = "e",

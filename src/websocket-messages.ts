@@ -6,7 +6,9 @@ export enum ESupportedClientMessageTypes {
     StopObserving = 'stopObserving',
     StopSharing = 'stopSharing',
     Message = 'message',
-    Connected = 'connected'
+    Connected = 'connected',
+    Offer = 'offer',
+    Answer = 'answer'
 }
 
 export enum ESupportedServerMessageTypes {
@@ -15,7 +17,9 @@ export enum ESupportedServerMessageTypes {
     Leave = 'leave',
     ConnectedList = 'connectedList',
     Connected = 'connected',
-    Message = 'message'
+    Message = 'message',
+    Offer = 'offer',
+    Answer = 'answer'
 }
 
 export enum ENumStatistics {

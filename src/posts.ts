@@ -13,15 +13,17 @@ export interface IContent {
 }
 
 export interface IPostBasic {
+    isForSale: boolean;
     costs: number;
     title: string;
     description?: string;
+    isVisible: boolean;
     hashtags: string[];
+    availableFor?: IBasicProfile[];
     content: IContent;
 }
-
 export interface IPost extends IPostBasic {
-    created: number;
+    createdAt: number;
     id: number;
     likes: number;
     sizes: string[];

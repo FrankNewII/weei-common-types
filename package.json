@@ -1,6 +1,6 @@
 {
   "name": "weei-used-types",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Weei types!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

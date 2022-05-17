@@ -1,6 +1,6 @@
 {
   "name": "weei-used-types",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Weei types!",
   "scripts": {
     "publish": "npm version patch && tsc && npm publish"

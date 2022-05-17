@@ -2,6 +2,9 @@
   "name": "weei-used-types",
   "version": "1.0.12",
   "description": "Weei types!",
+  "scripts": {
+    "publish": "npm version patch && git push && npm publish"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

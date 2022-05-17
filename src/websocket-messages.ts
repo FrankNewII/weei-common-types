@@ -43,7 +43,7 @@ export type StatisticType = [
 
 
 
-export interface IWebSocketMessage<MessageType = string, DataType = StatisticType> {
+export interface IWebSocketMessage<MessageType = string, DataType = any> {
     type: MessageType,
     user: WebsocketUser,
     data: DataType;

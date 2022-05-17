@@ -3,7 +3,7 @@
   "version": "1.0.16",
   "description": "Weei types!",
   "scripts": {
-    "publish": "npm version patch && git -c credential.helper= -c core.quotepath=false -c log.showSignature=false push --progress --porcelain origin refs/heads/master:master && npm publish"
+    "publish": "npm version patch && tsc && npm publish"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -23,6 +23,7 @@ export interface IPost extends IPostBasic {
     createdAt: number;
     id: number;
     likes: number;
+    didILike?: boolean;
     sizes: string[];
     owner: IBasicProfile;
 }

@@ -1,6 +1,7 @@
+export declare type TWallet = string;
 export interface IBasicProfile {
     alias: string;
-    wallet: string;
+    wallet: TWallet;
 }
 export interface IProfile extends IBasicProfile {
     avatar: string;

@@ -3,7 +3,7 @@
   "version": "1.0.22",
   "description": "Weei types!",
   "scripts": {
-    "publish": "npm version patch && tsc && npm publish"
+    "publishing": "npm version patch && tsc && npm publish"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

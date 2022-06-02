@@ -14,6 +14,10 @@ export interface IProfile extends IBasicProfile {
     notes?: string;
 }
 
+export interface ILinkedProfile extends IProfile {
+    link: string;
+}
+
 export interface WebsocketUser {
     id: string
     name: string

@@ -1,9 +1,9 @@
-import { IBasicProfile, ILinkedProfile } from './users';
+import { IBasicLinkedProfile, IBasicProfile, ILinkedProfile } from './users';
 import { IPost } from './posts';
 
 export enum ESupportedMessageTypes {
     Post = 'post',
-    Profile = 'text',
+    Profile = 'profile',
     Text = 'text',
     Audio = 'audio',
     Video = 'video',
@@ -11,7 +11,10 @@ export enum ESupportedMessageTypes {
     Selling = 'selling',
     BuyingRequest = 'buyRequest',
     SellOrder = 'sellOrder',
-    Discussion = 'discussion'
+    Discussion = 'discussion',
+    Gift = 'gift',
+    MoneyRequest = 'moneyRequest',
+    MoneyArrived = 'moneyArrived'
 }
 
 export interface IText {
@@ -51,12 +54,28 @@ export interface IImage extends IAudio {
 
 export interface IVideo extends IImage {}
 
+export interface IGift {
+    text?: string;
+    type: any;
+}
+
+export interface IMoneyRequest {
+    text?: string;
+    amount: number;
+}
+
+export interface IMoneyArrived {
+    text?: string;
+    amount: number;
+}
+
 export interface IMessageBasic {
     type: ESupportedMessageTypes;
-    content: IPost | ILinkedProfile | IText | IAudio | IVideo | IImage | ISelling | IBuyRequest | ISellOrder | IDiscussion;
+    content: IPost | ILinkedProfile | IText | IAudio | IVideo | IImage | ISelling | IBuyRequest | ISellOrder | IDiscussion | IGift | IMoneyRequest | IMoneyArrived;
 }
 
 export interface IMessage extends IMessageBasic {
     timestamp: number;
-    from: IBasicProfile;
+    from: IBasicLinkedProfile;
+    seen: boolean;
 }

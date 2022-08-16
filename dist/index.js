@@ -19,3 +19,4 @@ __exportStar(require("./users"), exports);
 __exportStar(require("./websocket-messages"), exports);
 __exportStar(require("./rtc-socket-messages"), exports);
 __exportStar(require("./messages"), exports);
+__exportStar(require("./comments"), exports);

@@ -1,12 +1,14 @@
-import { IBasicLinkedProfile } from './users';
+import { IBasicLinkedProfile, TWallet } from './users';
 
 export interface IBaseComment {
     text: string;
-    form: IBasicLinkedProfile;
+    ownerId: TWallet;
+    postId: number;
 }
 
 export interface IComment extends IBaseComment {
+    from: IBasicLinkedProfile;
     id: number;
-    likes: string;
+    likes: number;
     timestamp: number;
 }

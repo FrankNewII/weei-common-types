@@ -1,8 +1,8 @@
-import { IBasicProfile, ILinkedProfile } from './users';
+import { IBasicLinkedProfile, ILinkedProfile } from './users';
 import { IPost } from './posts';
 export declare enum ESupportedMessageTypes {
     Post = "post",
-    Profile = "text",
+    Profile = "profile",
     Text = "text",
     Audio = "audio",
     Video = "video",
@@ -10,13 +10,18 @@ export declare enum ESupportedMessageTypes {
     Selling = "selling",
     BuyingRequest = "buyRequest",
     SellOrder = "sellOrder",
-    Discussion = "discussion"
+    Discussion = "discussion",
+    Gift = "gift",
+    MoneyRequest = "moneyRequest",
+    MoneyArrived = "moneyArrived"
 }
-export interface IText {
+export interface IBaseContent {
+    text?: string;
+}
+export interface IText extends IBaseContent {
     text: string;
 }
-export interface ISelling {
-    text?: string;
+export interface ISelling extends IBaseContent {
     price: string;
 }
 export interface IBuyRequest extends ISelling {
@@ -31,8 +36,7 @@ export interface INote {
     time: number;
     note: string;
 }
-export interface IAudio {
-    text?: string;
+export interface IAudio extends IBaseContent {
     src: string;
     notes?: INote[];
 }
@@ -42,11 +46,21 @@ export interface IImage extends IAudio {
 }
 export interface IVideo extends IImage {
 }
+export interface IGift extends IBaseContent {
+    type: any;
+}
+export interface IMoneyRequest extends IBaseContent {
+    amount: number;
+}
+export interface IMoneyArrived extends IBaseContent {
+    amount: number;
+}
 export interface IMessageBasic {
     type: ESupportedMessageTypes;
-    content: IPost | ILinkedProfile | IText | IAudio | IVideo | IImage | ISelling | IBuyRequest | ISellOrder | IDiscussion;
+    content: IPost | ILinkedProfile | IText | IAudio | IVideo | IImage | ISelling | IBuyRequest | ISellOrder | IDiscussion | IGift | IMoneyRequest | IMoneyArrived;
 }
 export interface IMessage extends IMessageBasic {
     timestamp: number;
-    from: IBasicProfile;
+    from: IBasicLinkedProfile;
+    seen: boolean;
 }

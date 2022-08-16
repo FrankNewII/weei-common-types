@@ -1,4 +1,4 @@
-import { IBasicLinkedProfile, IBasicProfile, ILinkedProfile } from './users';
+import { IBasicLinkedProfile, ILinkedProfile } from './users';
 import { IPost } from './posts';
 
 export enum ESupportedMessageTypes {
@@ -17,12 +17,15 @@ export enum ESupportedMessageTypes {
     MoneyArrived = 'moneyArrived'
 }
 
-export interface IText {
+export interface IBaseContent {
+    text?: string;
+}
+
+export interface IText extends IBaseContent {
     text: string;
 }
 
-export interface ISelling {
-    text?: string;
+export interface ISelling extends IBaseContent {
     price: string;
 }
 
@@ -41,8 +44,7 @@ export interface INote {
     note: string;
 }
 
-export interface IAudio {
-    text?: string;
+export interface IAudio extends IBaseContent {
     src: string;
     notes?: INote[];
 }
@@ -54,18 +56,15 @@ export interface IImage extends IAudio {
 
 export interface IVideo extends IImage {}
 
-export interface IGift {
-    text?: string;
+export interface IGift extends IBaseContent {
     type: any;
 }
 
-export interface IMoneyRequest {
-    text?: string;
+export interface IMoneyRequest extends IBaseContent {
     amount: number;
 }
 
-export interface IMoneyArrived {
-    text?: string;
+export interface IMoneyArrived extends IBaseContent {
     amount: number;
 }
 

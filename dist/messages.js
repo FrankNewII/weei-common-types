@@ -4,7 +4,7 @@ exports.ESupportedMessageTypes = void 0;
 var ESupportedMessageTypes;
 (function (ESupportedMessageTypes) {
     ESupportedMessageTypes["Post"] = "post";
-    ESupportedMessageTypes["Profile"] = "text";
+    ESupportedMessageTypes["Profile"] = "profile";
     ESupportedMessageTypes["Text"] = "text";
     ESupportedMessageTypes["Audio"] = "audio";
     ESupportedMessageTypes["Video"] = "video";
@@ -13,4 +13,7 @@ var ESupportedMessageTypes;
     ESupportedMessageTypes["BuyingRequest"] = "buyRequest";
     ESupportedMessageTypes["SellOrder"] = "sellOrder";
     ESupportedMessageTypes["Discussion"] = "discussion";
+    ESupportedMessageTypes["Gift"] = "gift";
+    ESupportedMessageTypes["MoneyRequest"] = "moneyRequest";
+    ESupportedMessageTypes["MoneyArrived"] = "moneyArrived";
 })(ESupportedMessageTypes = exports.ESupportedMessageTypes || (exports.ESupportedMessageTypes = {}));

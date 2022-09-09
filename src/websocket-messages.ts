@@ -8,7 +8,9 @@ export enum ESupportedClientMessageTypes {
     Message = 'message',
     Connected = 'connected',
     Offer = 'offer',
+    RenegotiationOffer = 'renegotiationOffer',
     Answer = 'answer',
+    RenegotiationAnswer = 'renegotiationAnswer',
     Candidate = 'candidate',
     Me = 'me'
 }

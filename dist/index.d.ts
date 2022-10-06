@@ -1,5 +1,5 @@
 export * from './posts';
-export * from './users';
+export * from './profile';
 export * from './websocket-messages';
 export * from './rtc-socket-messages';
 export * from './messages';

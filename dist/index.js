@@ -15,7 +15,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./posts"), exports);
-__exportStar(require("./users"), exports);
+__exportStar(require("./profile"), exports);
 __exportStar(require("./websocket-messages"), exports);
 __exportStar(require("./rtc-socket-messages"), exports);
 __exportStar(require("./messages"), exports);

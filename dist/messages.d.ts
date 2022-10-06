@@ -1,4 +1,4 @@
-import { IBasicLinkedProfile, ILinkedProfile } from './users';
+import { IBasicLinkedProfile, ILinkedProfile } from './profile';
 import { IPost } from './posts';
 export declare enum ESupportedMessageTypes {
     Post = "post",
@@ -60,6 +60,7 @@ export interface IMessageBasic {
     content: IPost | ILinkedProfile | IText | IAudio | IVideo | IImage | ISelling | IBuyRequest | ISellOrder | IDiscussion | IGift | IMoneyRequest | IMoneyArrived;
 }
 export interface IMessage extends IMessageBasic {
+    _id: string;
     timestamp: number;
     from: IBasicLinkedProfile;
     seen: boolean;

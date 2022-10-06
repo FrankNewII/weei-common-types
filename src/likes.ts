@@ -1,7 +1,8 @@
 import { IPost } from './posts';
+import { IProfile } from './profile';
 
 export interface ILike {
-    likes: number;
+    from: IProfile;
     timestamp: number;
     post: IPost;
 }

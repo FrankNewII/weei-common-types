@@ -24,6 +24,7 @@ var ESupportedServerMessageTypes;
     ESupportedServerMessageTypes["ConnectedList"] = "connectedList";
     ESupportedServerMessageTypes["Connected"] = "connected";
     ESupportedServerMessageTypes["Message"] = "message";
+    ESupportedServerMessageTypes["Offer"] = "offer";
     ESupportedServerMessageTypes["RenegotiationOffer"] = "renegotiationOffer";
     ESupportedServerMessageTypes["Answer"] = "answer";
     ESupportedServerMessageTypes["RenegotiationAnswer"] = "renegotiationAnswer";

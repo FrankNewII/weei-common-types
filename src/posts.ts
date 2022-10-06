@@ -1,4 +1,4 @@
-import { IBasicProfile } from './users';
+import { IBasicProfile } from './profile';
 
 export enum ESupportedContentTypes {
     Video = 'video',
@@ -24,7 +24,7 @@ export interface IPostBasic {
 }
 export interface IPost extends IPostBasic {
     createdAt: number;
-    id: number;
+    _id: number;
     likes: number;
     didILike?: boolean;
     sizes: string[];

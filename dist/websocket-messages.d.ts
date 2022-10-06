@@ -20,6 +20,7 @@ export declare enum ESupportedServerMessageTypes {
     ConnectedList = "connectedList",
     Connected = "connected",
     Message = "message",
+    Offer = "offer",
     RenegotiationOffer = "renegotiationOffer",
     Answer = "answer",
     RenegotiationAnswer = "renegotiationAnswer",

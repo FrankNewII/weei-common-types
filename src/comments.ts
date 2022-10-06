@@ -1,14 +1,14 @@
-import { IBasicLinkedProfile, TWallet } from './users';
+import { IBasicLinkedProfile, TWallet } from './profile';
+import { IPost } from './posts';
 
 export interface IBaseComment {
     text: string;
-    ownerId: TWallet;
-    postId: number;
+    post: IPost | string;
 }
 
 export interface IComment extends IBaseComment {
+    _id: number;
     from: IBasicLinkedProfile;
-    id: number;
     likes: number;
     timestamp: number;
 }

@@ -1,4 +1,4 @@
-import { WebsocketUser } from './users';
+import { WebsocketUser } from './profile';
 
 export enum ESupportedClientMessageTypes {
     Statistic = 'statistic',

@@ -6,6 +6,7 @@ export interface IBasicProfile {
 }
 
 export interface IProfile extends IBasicProfile {
+    _id: string;
     avatar: string;
     followers: number;
     likes: number;

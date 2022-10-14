@@ -2,19 +2,18 @@ import { IBasicLinkedProfile, ILinkedProfile } from './profile';
 import { IPost } from './posts';
 
 export enum ESupportedMessageTypes {
-    Post = 'post',
-    Profile = 'profile',
-    Text = 'text',
-    Audio = 'audio',
+    Post = 'Post',
+    Profile = 'Profile',
+    Audio = 'Audio',
     Video = 'video',
-    Image = 'img',
-    Selling = 'selling',
-    BuyingRequest = 'buyRequest',
-    SellOrder = 'sellOrder',
-    Discussion = 'discussion',
-    Gift = 'gift',
-    MoneyRequest = 'moneyRequest',
-    MoneyArrived = 'moneyArrived'
+    Image = 'Image',
+    Selling = 'Sell',
+    BuyingRequest = 'BuyRequest',
+    SellOrder = 'SellOrder',
+    Discussion = 'Discussion',
+    Gift = 'Gift',
+    MoneyRequest = 'MoneyRequest',
+    MoneyArrived = 'MoneyArrived'
 }
 
 export interface IBaseContent {

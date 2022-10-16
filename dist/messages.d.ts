@@ -1,4 +1,4 @@
-import { IBasicLinkedProfile, ILinkedProfile } from './profile';
+import { ILinkedProfile, IProfile } from './profile';
 import { IPost } from './posts';
 export declare enum ESupportedMessageTypes {
     Post = "Post",
@@ -14,53 +14,21 @@ export declare enum ESupportedMessageTypes {
     MoneyRequest = "MoneyRequest",
     MoneyArrived = "MoneyArrived"
 }
-export interface IBaseContent {
-    text?: string;
-}
-export interface IText extends IBaseContent {
-    text: string;
-}
-export interface ISelling extends IBaseContent {
-    price: string;
-}
-export interface IBuyRequest extends ISelling {
-}
-export interface ISellOrder extends ISelling {
-    timestamp: number;
-}
-export interface IDiscussion {
-    [key: string]: any;
-}
-export interface INote {
-    time: number;
-    note: string;
-}
-export interface IAudio extends IBaseContent {
-    src: string;
-    notes?: INote[];
-}
-export interface IImage extends IAudio {
-    coords?: [number, number];
-    zoom?: number;
-}
-export interface IVideo extends IImage {
-}
-export interface IGift extends IBaseContent {
-    type: any;
-}
-export interface IMoneyRequest extends IBaseContent {
-    amount: number;
-}
-export interface IMoneyArrived extends IBaseContent {
-    amount: number;
+export interface ISellRequest {
+    price: number;
+    availableTo: number;
+    post: IPost;
+    status: 'open' | 'approved' | 'refused';
 }
 export interface IMessageBasic {
-    type: ESupportedMessageTypes;
-    content: IPost | ILinkedProfile | IText | IAudio | IVideo | IImage | ISelling | IBuyRequest | ISellOrder | IDiscussion | IGift | IMoneyRequest | IMoneyArrived;
+    text?: string;
+    to: IProfile | string;
+    type?: ESupportedMessageTypes;
+    content?: IPost | ILinkedProfile | ISellRequest | string;
 }
 export interface IMessage extends IMessageBasic {
     _id: string;
     timestamp: number;
-    from: IBasicLinkedProfile;
+    from: IProfile | string;
     seen: boolean;
 }

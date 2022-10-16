@@ -36,3 +36,9 @@ export interface IMessage extends IMessageBasic {
     from: IProfile | string;
     seen: boolean;
 }
+
+export interface IConversation extends IMessageBasic {
+    _id: string;
+    lastMessage: IMessage;
+    from: IProfile;
+}

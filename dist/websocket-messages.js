@@ -1,36 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ENumStatistics = exports.ESupportedServerMessageTypes = exports.ESupportedClientMessageTypes = void 0;
-var ESupportedClientMessageTypes;
-(function (ESupportedClientMessageTypes) {
-    ESupportedClientMessageTypes["Statistic"] = "statistic";
-    ESupportedClientMessageTypes["RequestSharing"] = "requestSharing";
-    ESupportedClientMessageTypes["StopObserving"] = "stopObserving";
-    ESupportedClientMessageTypes["StopSharing"] = "stopSharing";
-    ESupportedClientMessageTypes["Message"] = "message";
-    ESupportedClientMessageTypes["Connected"] = "connected";
-    ESupportedClientMessageTypes["Offer"] = "offer";
-    ESupportedClientMessageTypes["RenegotiationOffer"] = "renegotiationOffer";
-    ESupportedClientMessageTypes["Answer"] = "answer";
-    ESupportedClientMessageTypes["RenegotiationAnswer"] = "renegotiationAnswer";
-    ESupportedClientMessageTypes["Candidate"] = "candidate";
-    ESupportedClientMessageTypes["Me"] = "me";
-})(ESupportedClientMessageTypes = exports.ESupportedClientMessageTypes || (exports.ESupportedClientMessageTypes = {}));
-var ESupportedServerMessageTypes;
-(function (ESupportedServerMessageTypes) {
-    ESupportedServerMessageTypes["Statistic"] = "statistic";
-    ESupportedServerMessageTypes["Command"] = "command";
-    ESupportedServerMessageTypes["Leave"] = "leave";
-    ESupportedServerMessageTypes["ConnectedList"] = "connectedList";
-    ESupportedServerMessageTypes["Connected"] = "connected";
-    ESupportedServerMessageTypes["Message"] = "message";
-    ESupportedServerMessageTypes["Offer"] = "offer";
-    ESupportedServerMessageTypes["RenegotiationOffer"] = "renegotiationOffer";
-    ESupportedServerMessageTypes["Answer"] = "answer";
-    ESupportedServerMessageTypes["RenegotiationAnswer"] = "renegotiationAnswer";
-    ESupportedServerMessageTypes["Candidate"] = "candidate";
-    ESupportedServerMessageTypes["Me"] = "me";
-})(ESupportedServerMessageTypes = exports.ESupportedServerMessageTypes || (exports.ESupportedServerMessageTypes = {}));
+exports.ENumStatistics = exports.EWebsocketMessageTypes = void 0;
+var EWebsocketMessageTypes;
+(function (EWebsocketMessageTypes) {
+    EWebsocketMessageTypes["Command"] = "command";
+    EWebsocketMessageTypes["Leave"] = "leave";
+    EWebsocketMessageTypes["Enter"] = "enter";
+    EWebsocketMessageTypes["ConnectedList"] = "connectedList";
+    EWebsocketMessageTypes["Message"] = "message";
+    EWebsocketMessageTypes["Connected"] = "connected";
+    EWebsocketMessageTypes["Offer"] = "offer";
+    EWebsocketMessageTypes["RenegotiationOffer"] = "renegotiationOffer";
+    EWebsocketMessageTypes["Answer"] = "answer";
+    EWebsocketMessageTypes["RenegotiationAnswer"] = "renegotiationAnswer";
+    EWebsocketMessageTypes["Candidate"] = "candidate";
+    EWebsocketMessageTypes["Me"] = "me";
+})(EWebsocketMessageTypes = exports.EWebsocketMessageTypes || (exports.EWebsocketMessageTypes = {}));
 var ENumStatistics;
 (function (ENumStatistics) {
     ENumStatistics["events"] = "e";

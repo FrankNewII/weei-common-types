@@ -12,7 +12,8 @@ export enum EWebsocketMessageTypes {
     Answer = 'answer',
     RenegotiationAnswer = 'renegotiationAnswer',
     Candidate = 'candidate',
-    Me = 'me'
+    Me = 'me',
+    IAm = 'iAm'
 }
 
 export enum ENumStatistics {

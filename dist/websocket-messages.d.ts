@@ -1,25 +1,11 @@
 import { WebsocketUser } from './profile';
-export declare enum ESupportedClientMessageTypes {
-    Statistic = "statistic",
-    RequestSharing = "requestSharing",
-    StopObserving = "stopObserving",
-    StopSharing = "stopSharing",
-    Message = "message",
-    Connected = "connected",
-    Offer = "offer",
-    RenegotiationOffer = "renegotiationOffer",
-    Answer = "answer",
-    RenegotiationAnswer = "renegotiationAnswer",
-    Candidate = "candidate",
-    Me = "me"
-}
-export declare enum ESupportedServerMessageTypes {
-    Statistic = "statistic",
+export declare enum EWebsocketMessageTypes {
     Command = "command",
     Leave = "leave",
+    Enter = "enter",
     ConnectedList = "connectedList",
-    Connected = "connected",
     Message = "message",
+    Connected = "connected",
     Offer = "offer",
     RenegotiationOffer = "renegotiationOffer",
     Answer = "answer",

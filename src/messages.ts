@@ -39,6 +39,7 @@ export interface IMessage extends IMessageBasic {
 
 export interface IConversation extends IMessageBasic {
     _id: string;
+    name?: string;
     lastMessage: IMessage;
     from: IProfile;
 }

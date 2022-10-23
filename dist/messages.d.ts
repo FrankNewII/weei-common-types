@@ -34,7 +34,6 @@ export interface IMessage extends IMessageBasic {
 }
 export interface IConversation extends IMessageBasic {
     _id: string;
-    name?: string;
+    participants: IProfile[];
     lastMessage: IMessage;
-    from: IProfile;
 }

@@ -32,7 +32,7 @@ export interface IMessage extends IMessageBasic {
     from: IProfile | string;
     seen: boolean;
 }
-export interface IConversation extends IMessageBasic {
+export interface IConversation {
     _id: string;
     participants: IProfile[];
     lastMessage: IMessage;

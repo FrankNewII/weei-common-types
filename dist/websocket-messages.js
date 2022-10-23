@@ -15,6 +15,7 @@ var EWebsocketMessageTypes;
     EWebsocketMessageTypes["RenegotiationAnswer"] = "renegotiationAnswer";
     EWebsocketMessageTypes["Candidate"] = "candidate";
     EWebsocketMessageTypes["Me"] = "me";
+    EWebsocketMessageTypes["IAm"] = "iAm";
 })(EWebsocketMessageTypes = exports.EWebsocketMessageTypes || (exports.EWebsocketMessageTypes = {}));
 var ENumStatistics;
 (function (ENumStatistics) {

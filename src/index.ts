@@ -6,6 +6,7 @@ export * from './messages';
 export * from './comments';
 export * from './likes';
 export * from './updates';
+export * from './discussion';
 
 export type Prepend<I, T extends unknown[]> = [I, ...T];
 export type Append<I, T extends unknown[]> = [...T, I];

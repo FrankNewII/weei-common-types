@@ -21,3 +21,4 @@ __exportStar(require("./rtc-socket-messages"), exports);
 __exportStar(require("./messages"), exports);
 __exportStar(require("./comments"), exports);
 __exportStar(require("./likes"), exports);
+__exportStar(require("./updates"), exports);

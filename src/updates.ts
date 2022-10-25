@@ -9,6 +9,6 @@ export interface IUpdate {
     of?: IProfile | string;
     likes?: ILike[];
     comments?: IComment[];
-    message?: IMessage[];
+    messages?: IMessage[];
     discussions?: IDiscussion[];
 }

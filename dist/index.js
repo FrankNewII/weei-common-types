@@ -22,3 +22,4 @@ __exportStar(require("./messages"), exports);
 __exportStar(require("./comments"), exports);
 __exportStar(require("./likes"), exports);
 __exportStar(require("./updates"), exports);
+__exportStar(require("./discussion"), exports);

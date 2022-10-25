@@ -33,7 +33,7 @@ export interface IMessageBasic {
 export interface IMessage extends IMessageBasic {
     _id: string;
     timestamp: number;
-    conversation: string;
+    conversation: IConversation | string;
     from: IProfile | string;
     seen: boolean;
 }
